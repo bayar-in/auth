@@ -12,7 +12,7 @@ getJSON("https://asia-southeast2-awangga.cloudfunctions.net/bayarin/data/user","
 function responseFunction(result){
     if (result.status === 200){
         setInner("content","Selamat datang "+result.data.name);
-        redirect("/src/page/dashboard/dashboard.html");
+        redirect("https://bayar.in.my.id/src/page/dashboard/dashboard.html");
     }else{
         getJSON("https://asia-southeast2-awangga.cloudfunctions.net/bayarin/data/konsumen/user","login",getCookie("login"),apiResponse)
     }
@@ -25,7 +25,7 @@ function apiResponse(result){
         redirect("/testi");
     }else{
         setInner("content","Silahkan lakukan Pendaftaran");
-        redirect("/src/page/login/login.html");
+        redirect("https://bayar.in.my.id/src/page/login/login.html");
        //redirect("https://wa.me/pamongdesa?text=bantuan+operator");
     }
     
