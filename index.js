@@ -25,7 +25,7 @@ function apiResponse(result){
         redirect("/testi");
     }else{
         setInner("content","Silahkan lakukan Pendaftaran");
-        redirect("/");
+        redirect("/src/page/login/login.html");
        //redirect("https://wa.me/pamongdesa?text=bantuan+operator");
     }
     
