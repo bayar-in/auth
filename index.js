@@ -25,7 +25,7 @@ function apiResponse(result){
         redirect("/testi");
     }else{
         setInner("content","Silahkan lakukan Pendaftaran");
-        redirect("https://bayar.in.my.id/src/page/login/login.html");
+        redirect("https://bayar.in.my.id/src/page/register/regist.html");
        //redirect("https://wa.me/pamongdesa?text=bantuan+operator");
     }
     
